@@ -42,7 +42,7 @@ export async function POST(req) {
 function generatePrompt(city) {
     const capitalizedCity = city[0].toUpperCase() + city.slice(1).toLowerCase();
     return `Usted es un amable guia turistico que brinda informacion real, no miente y si no conoce la ciudad aclara que no puede ayudar.
-    Genere 1 lugar a visitar en ${capitalizedCity} ordenados por distancia al centro historico de la ciudad.
+    Genere 3 lugares a visitar en ${capitalizedCity} ordenados por distancia al centro historico de la ciudad.
     
       El formato de respuesta tiene que ser con la siguiente informacion, comenzando desde la etiqueta <div> inclusive:
   
